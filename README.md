@@ -1,10 +1,28 @@
 
- Many thanx  **Matthew York and community** for awesome library. You can find  original [repo/docs here](https://github.com/MatthewYork/DateTools). This package was created because I need *Carthage* support and distinguish between Swift and Objective-C implementation.
+Thank you, **Matthew York and community** for awesome library. You can find  original [repo/docs here](https://github.com/MatthewYork/DateTools). This package was created because I need *Carthage* support and distinguish between Swift and Objective-C implementation.
 
-* DateTools removes the boilerplate required to access date components, handles more nuanced date comparisons, and serves as the foundation for entirely new concepts like Time Periods and their collections.  
+* DateTools removes the boilerplate required to access date components, handles more nuanced date comparisons, and serves as the foundation for entirely new concepts like Time Periods and their collections.
+
+### How to check if two date ranges overlaps in Objective-C? With *DateTools* it's really easy.
+```objective-C
+// Just example.
+DTTimePeriod *periodA = [[DTTimePeriod alloc] initWithStartDate:request.startDate endDate:request.endDate];
+DTTimePeriod *periodB = [[DTTimePeriod alloc] initWithStartDate:requestB.startDate endDate:requestB.endDate];
+//Magic here
+if ([periodA overlapsWith:periodB]) {
+    NSLog(@"Is it cool?");
+}
+```  
+
+## [How to use with Carthage](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application):
+
+ * Add to your *Cartfile*  ```github "3a4oT/DateToolsObjC" == 1.0.0```
+ * Run ```carthage build 3a4oT/DateToolsObjC```
+ * Add ```DateToolsObjC.framework``` to your target
+ * In your ```*.h/*.m``` just ```#import<DateToolsObjC/DateTools.h>```
 
 
-MIT License
+#### MIT License
 
 Copyright (c) 2017 Petro Rovenskyi
 

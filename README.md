@@ -1,4 +1,6 @@
 
+[![Build Status](https://travis-ci.org/3a4oT/DateToolsObjC.svg?branch=master)](https://travis-ci.org/3a4oT/DateToolsObjC)
+
 Thank you, **[Matthew York](https://github.com/MatthewYork) and [community](https://github.com/3a4oT/DateToolsObjC/blob/master/CREDITS.md)** for awesome library. You can find  original [repo/docs here](https://github.com/MatthewYork/DateTools). This package was created because I need *Carthage* support and distinguish between Swift and Objective-C implementation.
 
 * DateTools removes the boilerplate required to access date components, handles more nuanced date comparisons, and serves as the foundation for entirely new concepts like Time Periods and their collections.

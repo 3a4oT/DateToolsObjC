@@ -33,7 +33,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_22"
+               BlueprintIdentifier = "FBCBCD761F9F6C9900453AB9"
                BuildableName = "DateToolsObjCTests.xctest"
                BlueprintName = "DateToolsObjCTests"
                ReferencedContainer = "container:DateToolsObjC.xcodeproj">

@@ -23,7 +23,10 @@
 #import <Foundation/Foundation.h>
 
 #pragma mark - Domain
+
+NS_ASSUME_NONNULL_BEGIN
 extern NSString *const DTErrorDomain;
+NS_ASSUME_NONNULL_END
 
 #pragma mark - Status Codes
 static const NSUInteger DTInsertOutOfBoundsException = 0;
@@ -32,7 +35,7 @@ static const NSUInteger DTBadTypeException = 2;
 
 @interface DTError : NSObject
 
-+(void)throwInsertOutOfBoundsException:(NSInteger)index array:(NSArray *)array;
-+(void)throwRemoveOutOfBoundsException:(NSInteger)index array:(NSArray *)array;
-+(void)throwBadTypeException:(id)obj expectedClass:(Class)classType;
++(void)throwInsertOutOfBoundsException:(NSInteger)index array:(nonnull NSArray *)array;
++(void)throwRemoveOutOfBoundsException:(NSInteger)index array:(nonnull NSArray *)array;
++(void)throwBadTypeException:(nonnull id)obj expectedClass:(nonnull Class)classType;
 @end

@@ -66,21 +66,21 @@ typedef NS_ENUM(NSUInteger, DTTimePeriodAnchor) {
 /**
  *  The start date for a DTTimePeriod representing the starting boundary of the time period
  */
-@property (nonatomic,strong) NSDate *StartDate;
+@property (nonnull,nonatomic,strong) NSDate *StartDate;
 
 /**
  *  The end date for a DTTimePeriod representing the ending boundary of the time period
  */
-@property (nonatomic,strong) NSDate *EndDate;
+@property (nonnull,nonatomic,strong) NSDate *EndDate;
 
 #pragma mark - Custom Init / Factory Methods
--(instancetype)initWithStartDate:(NSDate *)startDate endDate:(NSDate *)endDate;
-+(instancetype)timePeriodWithStartDate:(NSDate *)startDate endDate:(NSDate *)endDate;
-+(instancetype)timePeriodWithSize:(DTTimePeriodSize)size startingAt:(NSDate *)date;
-+(instancetype)timePeriodWithSize:(DTTimePeriodSize)size amount:(NSInteger)amount startingAt:(NSDate *)date;
-+(instancetype)timePeriodWithSize:(DTTimePeriodSize)size endingAt:(NSDate *)date;
-+(instancetype)timePeriodWithSize:(DTTimePeriodSize)size amount:(NSInteger)amount endingAt:(NSDate *)date;
-+(instancetype)timePeriodWithAllTime;
+-(nonnull instancetype)initWithStartDate:(nullable NSDate *)startDate endDate:(nullable NSDate *)endDate;
++(nonnull instancetype)timePeriodWithStartDate:(nullable NSDate *)startDate endDate:(nullable NSDate *)endDate;
++(nonnull instancetype)timePeriodWithSize:(DTTimePeriodSize)size startingAt:(nonnull NSDate *)date;
++(nonnull instancetype)timePeriodWithSize:(DTTimePeriodSize)size amount:(NSInteger)amount startingAt:(nonnull NSDate *)date;
++(nonnull instancetype)timePeriodWithSize:(DTTimePeriodSize)size endingAt:(nonnull NSDate *)date;
++(nonnull instancetype)timePeriodWithSize:(DTTimePeriodSize)size amount:(NSInteger)amount endingAt:(nonnull NSDate *)date;
++(nonnull instancetype)timePeriodWithAllTime;
 
 #pragma mark - Time Period Information
 -(BOOL)hasStartDate;
@@ -94,16 +94,16 @@ typedef NS_ENUM(NSUInteger, DTTimePeriodAnchor) {
 -(double)durationInSeconds;
 
 #pragma mark - Time Period Relationship
--(BOOL)isEqualToPeriod:(DTTimePeriod *)period;
--(BOOL)isInside:(DTTimePeriod *)period;
--(BOOL)contains:(DTTimePeriod *)period;
--(BOOL)overlapsWith:(DTTimePeriod *)period;
--(BOOL)intersects:(DTTimePeriod *)period;
--(DTTimePeriodRelation)relationToPeriod:(DTTimePeriod *)period;
--(NSTimeInterval)gapBetween:(DTTimePeriod *)period;
+-(BOOL)isEqualToPeriod:(nullable DTTimePeriod *)period;
+-(BOOL)isInside:(nullable DTTimePeriod *)period;
+-(BOOL)contains:(nullable DTTimePeriod *)period;
+-(BOOL)overlapsWith:(nullable DTTimePeriod *)period;
+-(BOOL)intersects:(nullable DTTimePeriod *)period;
+-(DTTimePeriodRelation)relationToPeriod:(nullable DTTimePeriod *)period;
+-(NSTimeInterval)gapBetween:(nullable DTTimePeriod *)period;
 
 #pragma mark - Date Relationships
--(BOOL)containsDate:(NSDate *)date interval:(DTTimePeriodInterval)interval;
+-(BOOL)containsDate:(nullable NSDate *)date interval:(DTTimePeriodInterval)interval;
 
 #pragma mark - Period Manipulation
 #pragma mark Shifts
@@ -119,5 +119,5 @@ typedef NS_ENUM(NSUInteger, DTTimePeriodAnchor) {
 -(void)shortenWithAnchorDate:(DTTimePeriodAnchor)anchor size:(DTTimePeriodSize)size amount:(NSInteger)amount;
 
 #pragma mark - Helper Methods
--(DTTimePeriod *)copy;
+-(nonnull DTTimePeriod *)copy;
 @end

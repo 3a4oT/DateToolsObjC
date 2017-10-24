@@ -29,6 +29,7 @@
 
 @implementation DTTimePeriodGroup
 
+
 -(id) init
 {
     if (self = [super init]) {
@@ -38,12 +39,12 @@
     return self;
 }
 
-- (id)objectAtIndexedSubscript:(NSUInteger)index
+- (DTTimePeriod *)objectAtIndexedSubscript:(NSUInteger)index
 {
     return periods[index];
 }
 
-- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)index {
+- (void)setObject:(DTTimePeriod *)obj atIndexedSubscript:(NSUInteger)index {
     periods[index] = obj;
 }
 

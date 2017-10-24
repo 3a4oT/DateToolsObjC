@@ -26,11 +26,11 @@
 @interface DTTimePeriodCollection : DTTimePeriodGroup
 
 #pragma mark - Custom Init / Factory Methods
-+(DTTimePeriodCollection *)collection;
++(nonnull instancetype)collection;
 
 #pragma mark - Collection Manipulation
--(void)addTimePeriod:(DTTimePeriod *)period;
--(void)insertTimePeriod:(DTTimePeriod *)period atIndex:(NSInteger)index;
+-(void)addTimePeriod:(nonnull DTTimePeriod *)period;
+-(void)insertTimePeriod:(nonnull DTTimePeriod *)period atIndex:(NSInteger)index;
 -(void)removeTimePeriodAtIndex:(NSInteger)index;
 
 #pragma mark - Sorting
@@ -42,14 +42,14 @@
 -(void)sortByDurationDescending;
 
 #pragma mark - Collection Relationship
--(DTTimePeriodCollection *)periodsInside:(DTTimePeriod *)period;
--(DTTimePeriodCollection *)periodsIntersectedByDate:(NSDate *)date;
--(DTTimePeriodCollection *)periodsIntersectedByPeriod:(DTTimePeriod *)period;
--(DTTimePeriodCollection *)periodsOverlappedByPeriod:(DTTimePeriod *)period;
--(BOOL)isEqualToCollection:(DTTimePeriodCollection *)collection considerOrder:(BOOL)considerOrder;
+-(nullable DTTimePeriodCollection *)periodsInside:(nullable DTTimePeriod *)period;
+-(nullable DTTimePeriodCollection *)periodsIntersectedByDate:(nullable NSDate *)date;
+-(nullable DTTimePeriodCollection *)periodsIntersectedByPeriod:(nullable DTTimePeriod *)period;
+-(nullable DTTimePeriodCollection *)periodsOverlappedByPeriod:(nullable DTTimePeriod *)period;
+-(BOOL)isEqualToCollection:(nullable DTTimePeriodCollection *)collection considerOrder:(BOOL)considerOrder;
 
 #pragma mark - Helper Methods
--(DTTimePeriodCollection *)copy;
+-(nonnull DTTimePeriodCollection *)copy;
 
 #pragma mark - Updates
 -(void)updateVariables;

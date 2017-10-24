@@ -27,7 +27,11 @@
 
 @end
 
+
 @implementation DTTimePeriodChain
+
+@synthesize First;
+@synthesize Last;
 
 #pragma mark - Custom Init / Factory Chain
 +(DTTimePeriodChain *)chain{

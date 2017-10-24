@@ -25,17 +25,17 @@
 
 @interface DTTimePeriodGroup : NSObject {
 @protected
-    NSMutableArray *periods;
+    NSMutableArray<DTTimePeriod *> *periods;
     NSDate *StartDate;
     NSDate *EndDate;
 }
 
-@property (nonatomic, readonly) NSDate *StartDate;
-@property (nonatomic, readonly) NSDate *EndDate;
+@property (nullable, nonatomic, readonly) NSDate *StartDate;
+@property (nullable, nonatomic, readonly) NSDate *EndDate;
 
 //Here we will use object subscripting to help create the illusion of an array
-- (id)objectAtIndexedSubscript:(NSUInteger)index; //getter
-- (void)setObject:(id)obj atIndexedSubscript:(NSUInteger)index; //setter
+- (nullable DTTimePeriod *)objectAtIndexedSubscript:(NSUInteger)index; //getter
+- (void)setObject:(nonnull DTTimePeriod *)obj atIndexedSubscript:(NSUInteger)index; //setter
 
 #pragma mark - Group Info
 -(double)durationInYears;
@@ -44,8 +44,8 @@
 -(double)durationInHours;
 -(double)durationInMinutes;
 -(double)durationInSeconds;
--(NSDate *)StartDate;
--(NSDate *)EndDate;
+-(nullable NSDate *)StartDate;
+-(nullable NSDate *)EndDate;
 -(NSInteger)count;
 
 #pragma mark - Chain Time Manipulation
@@ -55,7 +55,7 @@
 -(void)shiftLaterWithSize:(DTTimePeriodSize)size amount:(NSInteger)amount;
 
 #pragma mark - Comparison
--(BOOL)hasSameCharacteristicsAs:(DTTimePeriodGroup *)group;
+-(BOOL)hasSameCharacteristicsAs:(nullable DTTimePeriodGroup *)group;
 
 #pragma mark - Updates
 -(void)updateVariables;

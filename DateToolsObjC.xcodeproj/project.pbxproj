@@ -10,11 +10,8 @@
 		FB1F4D9E1F9F7BA300695DF3 /* DTTimePeriodChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1F4D8F1F9F7BA100695DF3 /* DTTimePeriodChainTests.m */; };
 		FB1F4D9F1F9F7BA300695DF3 /* DateToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1F4D901F9F7BA100695DF3 /* DateToolsTests.m */; };
 		FB1F4DA01F9F7BA300695DF3 /* DTTimePeriodCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1F4D911F9F7BA200695DF3 /* DTTimePeriodCollectionTests.m */; };
-		FB1F4DA11F9F7BA300695DF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB1F4D931F9F7BA200695DF3 /* InfoPlist.strings */; };
-		FB1F4DA21F9F7BA300695DF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB1F4D961F9F7BA200695DF3 /* InfoPlist.strings */; };
 		FB1F4DA31F9F7BA300695DF3 /* DTTimePeriodGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1F4D981F9F7BA200695DF3 /* DTTimePeriodGroupTests.m */; };
 		FB1F4DA41F9F7BA300695DF3 /* DTTimePeriodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1F4D991F9F7BA300695DF3 /* DTTimePeriodTests.m */; };
-		FB1F4DA51F9F7BA300695DF3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FB1F4D9B1F9F7BA300695DF3 /* InfoPlist.strings */; };
 		FB1F4DA61F9F7BA300695DF3 /* DTTimeAgoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FB1F4D9D1F9F7BA300695DF3 /* DTTimeAgoTests.m */; };
 		FB1F4DA71F9F862100695DF3 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FBCBCD4F1F9F698C00453AB9 /* DateTools.bundle */; };
 		FBCBCD601F9F698C00453AB9 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FBCBCD4F1F9F698C00453AB9 /* DateTools.bundle */; };
@@ -50,11 +47,8 @@
 		FB1F4D8F1F9F7BA100695DF3 /* DTTimePeriodChainTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChainTests.m; sourceTree = "<group>"; };
 		FB1F4D901F9F7BA100695DF3 /* DateToolsTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateToolsTests.m; sourceTree = "<group>"; };
 		FB1F4D911F9F7BA200695DF3 /* DTTimePeriodCollectionTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodCollectionTests.m; sourceTree = "<group>"; };
-		FB1F4D941F9F7BA200695DF3 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = InfoPlist.strings; sourceTree = "<group>"; };
-		FB1F4D971F9F7BA200695DF3 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = InfoPlist.strings; sourceTree = "<group>"; };
 		FB1F4D981F9F7BA200695DF3 /* DTTimePeriodGroupTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroupTests.m; sourceTree = "<group>"; };
 		FB1F4D991F9F7BA300695DF3 /* DTTimePeriodTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodTests.m; sourceTree = "<group>"; };
-		FB1F4D9C1F9F7BA300695DF3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
 		FB1F4D9D1F9F7BA300695DF3 /* DTTimeAgoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimeAgoTests.m; sourceTree = "<group>"; };
 		FBCBCD4F1F9F698C00453AB9 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
 		FBCBCD501F9F698C00453AB9 /* DTTimePeriod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
@@ -97,30 +91,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FB1F4D921F9F7BA200695DF3 /* es.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				FB1F4D931F9F7BA200695DF3 /* InfoPlist.strings */,
-			);
-			path = es.lproj;
-			sourceTree = "<group>";
-		};
-		FB1F4D951F9F7BA200695DF3 /* ja.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				FB1F4D961F9F7BA200695DF3 /* InfoPlist.strings */,
-			);
-			path = ja.lproj;
-			sourceTree = "<group>";
-		};
-		FB1F4D9A1F9F7BA300695DF3 /* en.lproj */ = {
-			isa = PBXGroup;
-			children = (
-				FB1F4D9B1F9F7BA300695DF3 /* InfoPlist.strings */,
-			);
-			path = en.lproj;
-			sourceTree = "<group>";
-		};
 		FBCBCD4E1F9F698C00453AB9 /* DateTools */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,9 +139,6 @@
 				FB1F4D911F9F7BA200695DF3 /* DTTimePeriodCollectionTests.m */,
 				FB1F4D981F9F7BA200695DF3 /* DTTimePeriodGroupTests.m */,
 				FB1F4D991F9F7BA300695DF3 /* DTTimePeriodTests.m */,
-				FB1F4D9A1F9F7BA300695DF3 /* en.lproj */,
-				FB1F4D921F9F7BA200695DF3 /* es.lproj */,
-				FB1F4D951F9F7BA200695DF3 /* ja.lproj */,
 				FBCBCD7B1F9F6C9900453AB9 /* Info.plist */,
 			);
 			path = DateToolsObjCTests;
@@ -312,9 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB1F4DA71F9F862100695DF3 /* DateTools.bundle in Resources */,
-				FB1F4DA51F9F7BA300695DF3 /* InfoPlist.strings in Resources */,
-				FB1F4DA21F9F7BA300695DF3 /* InfoPlist.strings in Resources */,
-				FB1F4DA11F9F7BA300695DF3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,33 +321,6 @@
 			targetProxy = FBCBCD7D1F9F6C9900453AB9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FB1F4D931F9F7BA200695DF3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB1F4D941F9F7BA200695DF3 /* es */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FB1F4D961F9F7BA200695DF3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB1F4D971F9F7BA200695DF3 /* ja */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		FB1F4D9B1F9F7BA300695DF3 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FB1F4D9C1F9F7BA300695DF3 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FBCBCD801F9F6C9900453AB9 /* Debug */ = {

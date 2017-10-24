@@ -1,0 +1,8 @@
+language: objective-c
+osx_image: xcode9
+xcode_project: DateToolsObjC.xcodeproj
+xcode_scheme: DateToolsObjC
+before_script:
+    sudo gem install xcpretty
+script:
+    xcodebuild -project DateToolsObjC.xcodeproj -scheme DateToolsObjC -sdk macosx10.13 -configuration Debug test | xcpretty

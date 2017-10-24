@@ -20,8 +20,8 @@
 // ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "DTTimePeriod.h"
-#import "NSDate+DateTools.h"
+#import "include/DTTimePeriod.h"
+#import "include/NSDate+DateTools.h"
 
 @interface DTTimePeriod ()
 

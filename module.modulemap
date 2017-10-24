@@ -1,0 +1,3 @@
+module DateToolsObjC {
+    umbrella header "Headers/DateTools.h" requires objc export *
+}

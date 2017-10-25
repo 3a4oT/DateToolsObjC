@@ -7,15 +7,19 @@ env:
 before_script:
   - brew update
   - brew outdated carthage || brew upgrade carthage
-  - sudo gem install xcpretty
+  - gem install xcpretty
+  - gem install xcpretty-travis-formatter
 script:
-  - xcodebuild -project DateToolsObjC.xcodeproj -scheme DateToolsObjC -sdk macosx10.13 -configuration Release test | xcpretty
+  - xcodebuild -project DateToolsObjC.xcodeproj -scheme DateToolsObjC -configuration Release test | xcpretty
 before_deploy:
-  - carthage build --no-skip-current carthage archive $FRAMEWORK_NAME
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME
 deploy:
   provider: releases
   api_key:
     secure: SiSM4AMUPQGETdnkgxpQ4HHsBcQcD5Fd9PK+ShmsV2rsKjoBAkH3NIY2XS5C3zTwuDq7rtqDY2+y7qnCgi+2iExoQX0VlzC8nUtsTMz//W4KbcuChmmWR501chsvQxHGqmcS9XkHuuVz7ocrtDCNP1y+k8r1N2CEGd9+uVOSsgGyZC+qC2pMm22Gte7ToJrHhnRqYBLAZM+d73ZWdqlSKUJDKKgf6ROyhpY0+gCilCdAh5yN3+prfI428rwCBIGtqmjHGlANS6U/rwfpOQv4W82Aw5RQnmFjz3wEPzzr1xXdCb/pcZUhf8fhHuajR2Y3IoDtzkQ663ydNc/hKkg1onrrmd0vO3LQ59UjePaPD0nH3nNn9Npq8gDKuYIBnvchIaCY7U25AkL4s4FjHpLrekteS9R8uNI4U9k3iBLfkWDJnabgiAWiv0H+4xEO+xbEGIwqqedAuSjQWcyMgMgCKzW4G0dQJNkU3fummVVWH42n35TxzqZXJNISc8MGYGKRNqJmeFW8p75NSLrJXcmL98N+8Irin2lC0EzZCMbTbWN6hbuiUf+F6KsGGpv+FfuNtOIbfhMQkIptbtXacnE+vIMNiTQ0lpAUNzY7NTqOdv7rQYm2X16IqHAbIwXoNWgRqRuDL0IOQZ423LuI986yn0phhH9yFNtgxEeST47C7o4=
   file: "$FRAMEWORK_NAME.framework.zip"
+  skip_cleanup: true
   on:
     repo: 3a4oT/DateToolsObjC
+    tags: true

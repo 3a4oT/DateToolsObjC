@@ -5,10 +5,9 @@ xcode_scheme: DateToolsObjC
 env:
   global: FRAMEWORK_NAME=DateToolsObjC
 before_script:
-  - brew update brew outdated carthage || brew upgrade carthage
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
   - sudo gem install xcpretty
-before_install:
-  - carthage bootstrap
 script:
   - xcodebuild -project DateToolsObjC.xcodeproj -scheme DateToolsObjC -sdk macosx10.13 -configuration Release test | xcpretty
 before_deploy:

@@ -21,7 +21,7 @@ if ([periodA overlapsWith:periodB]) {
 
 ## [How to use with Carthage](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application):
 
- * Add to your *Cartfile*  ```github "3a4oT/DateToolsObjC" == 1.0.0```
+ * Add to your *Cartfile*  ```github "3a4oT/DateToolsObjC"```
  * Run ```carthage build 3a4oT/DateToolsObjC```
  * Add ```DateToolsObjC.framework``` to your target
  * In your ```*.h/*.m``` just ```@import DateToolsObjC;```

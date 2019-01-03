@@ -10,11 +10,14 @@
 #import <DateToolsObjC/NSDate+DateTools.h>
 
 @interface DateToolsTests : XCTestCase
-@property NSDateFormatter *formatter;
-@property NSDate *controlDate;
+@property (nonatomic) NSDateFormatter *formatter;
+@property (nonatomic) NSDate *controlDate;
 @end
 
 @implementation DateToolsTests
+
+@synthesize formatter = _formatter;
+@synthesize controlDate = _controlDate;
 
 - (void)setUp
 {

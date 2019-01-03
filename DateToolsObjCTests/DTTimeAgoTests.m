@@ -10,12 +10,16 @@
 #import <DateToolsObjC/NSDate+DateTools.h>
 
 @interface DTTimeAgoTests : XCTestCase
-@property NSDateFormatter *formatter;
-@property NSDate *date0;
-@property NSDate *date1;
+@property (nonatomic) NSDateFormatter *formatter;
+@property (nonatomic) NSDate *date0;
+@property (nonatomic) NSDate *date1;
 @end
 
 @implementation DTTimeAgoTests
+
+@synthesize formatter = _formatter;
+@synthesize date0 = _date0;
+@synthesize date1 = _date1;
 
 - (void)setUp
 {

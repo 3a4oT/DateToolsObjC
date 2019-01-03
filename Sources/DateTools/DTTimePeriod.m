@@ -30,6 +30,9 @@
 
 @implementation DTTimePeriod
 
+@synthesize StartDate = _StartDate;
+@synthesize EndDate   = _EndDate;
+
 #pragma mark - Custom Init / Factory Methods
 /**
  *  Initializes an instance of DTTimePeriod from a given start and end date

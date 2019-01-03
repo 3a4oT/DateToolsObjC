@@ -11,11 +11,14 @@
 #import <DateToolsObjC/DTTimePeriodChain.h>
 
 @interface DTTimePeriodGroupTests : XCTestCase
-@property NSDateFormatter *formatter;
-@property DTTimePeriodCollection *controlCollection;
+@property (nonatomic) NSDateFormatter *formatter;
+@property (nonatomic) DTTimePeriodCollection *controlCollection;
 @end
 
 @implementation DTTimePeriodGroupTests
+
+@synthesize formatter = _formatter;
+@synthesize controlCollection = _controlCollection;
 
 - (void)setUp
 {

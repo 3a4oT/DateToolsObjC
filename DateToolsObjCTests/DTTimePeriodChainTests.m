@@ -10,11 +10,14 @@
 #import <DateToolsObjC/DTTimePeriodChain.h>
 
 @interface DTTimePeriodChainTests : XCTestCase
-@property NSDateFormatter *formatter;
-@property DTTimePeriodChain *controlChain;
+@property (nonatomic) NSDateFormatter *formatter;
+@property (nonatomic) DTTimePeriodChain *controlChain;
 @end
 
 @implementation DTTimePeriodChainTests
+
+@synthesize formatter = _formatter;
+@synthesize controlChain = _controlChain;
 
 - (void)setUp
 {
@@ -100,7 +103,10 @@
     DTTimePeriodChain *testChain = [DTTimePeriodChain chain];
     [testChain addTimePeriod:[DTTimePeriod timePeriodWithStartDate:[self.formatter dateFromString:@"2015 11 05 18:15:12.000"] endDate:[self.formatter dateFromString:@"2016 11 05 18:15:12.000"]]];
     [testChain addTimePeriod:[DTTimePeriod timePeriodWithStartDate:[self.formatter dateFromString:@"2016 11 05 18:15:12.000"] endDate:[self.formatter dateFromString:@"2017 11 05 18:15:12.000"]]];
-    [testChain shiftEarlierWithSize:DTTimePeriodSizeSecond amount:[[DTTimePeriod timePeriodWithStartDate:[self.formatter dateFromString:@"2014 11 05 18:15:12.000"] endDate:[self.formatter dateFromString:@"2015 11 05 18:15:12.000"]] durationInSeconds]];
+    NSDate *startDate = [self.formatter dateFromString:@"2014 11 05 18:15:12.000"];
+    NSDate *endDate = [self.formatter dateFromString:@"2015 11 05 18:15:12.000"];
+    NSInteger amount = (NSInteger)[[DTTimePeriod timePeriodWithStartDate:startDate endDate:endDate] durationInSeconds];
+    [testChain shiftEarlierWithSize:DTTimePeriodSizeSecond amount:amount];
     
     [self.controlChain removeEarliestTimePeriod];
     

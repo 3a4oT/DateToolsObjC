@@ -48,7 +48,8 @@
     if (periods) {
         if (periods.count > 0) {
             //Create a modified period to be added based on size of passed in period
-            DTTimePeriod *modifiedPeriod = [DTTimePeriod timePeriodWithSize:DTTimePeriodSizeSecond amount:period.durationInSeconds startingAt:[periods[periods.count - 1] EndDate]];
+            NSInteger amount = (NSInteger)period.durationInSeconds;
+            DTTimePeriod *modifiedPeriod = [DTTimePeriod timePeriodWithSize:DTTimePeriodSizeSecond amount:amount startingAt:[periods[periods.count - 1] EndDate]];
             
             //Add object to periods array
             [periods addObject:modifiedPeriod];
@@ -79,7 +80,8 @@
     //Make sure the index is within the operable bounds of the periods array
     if (index == 0) {
         //Update bounds of period to make it fit in chain
-        DTTimePeriod *modifiedPeriod = [DTTimePeriod timePeriodWithSize:DTTimePeriodSizeSecond amount:period.durationInSeconds endingAt:[periods[0] EndDate]];
+        NSInteger amount = (NSInteger)period.durationInSeconds;
+        DTTimePeriod *modifiedPeriod = [DTTimePeriod timePeriodWithSize:DTTimePeriodSizeSecond amount:amount endingAt:[periods[0] EndDate]];
         
         //Insert the updated object at the beginning of the periods array
         [periods insertObject:modifiedPeriod atIndex:0];
@@ -90,12 +92,14 @@
         [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             //Shift later
             if (idx >= index) {
-                [((DTTimePeriod *) obj) shiftLaterWithSize:DTTimePeriodSizeSecond amount:period.durationInSeconds];
+                NSInteger amount = (NSInteger)period.durationInSeconds;
+                [((DTTimePeriod *) obj) shiftLaterWithSize:DTTimePeriodSizeSecond amount:amount];
             }
         }];
         
         //Update bounds of period to make it fit in chain
-        DTTimePeriod *modifiedPeriod = [DTTimePeriod timePeriodWithSize:DTTimePeriodSizeSecond amount:period.durationInSeconds startingAt:[periods[index - 1] EndDate]];
+        NSInteger amount = (NSInteger)period.durationInSeconds;
+        DTTimePeriod *modifiedPeriod = [DTTimePeriod timePeriodWithSize:DTTimePeriodSizeSecond amount:amount startingAt:[periods[index - 1] EndDate]];
         
         //Insert the updated object at the beginning of the periods array
         [periods insertObject:modifiedPeriod atIndex:index];
@@ -117,7 +121,8 @@
         [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             //Shift earlier
             if (idx > index) {
-                [((DTTimePeriod *) obj) shiftEarlierWithSize:DTTimePeriodSizeSecond amount:period.durationInSeconds];
+                NSInteger amount = (NSInteger)period.durationInSeconds;
+                [((DTTimePeriod *) obj) shiftEarlierWithSize:DTTimePeriodSizeSecond amount:amount];
             }
         }];
         
@@ -150,7 +155,8 @@
         //Shift time periods earlier
         [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
             //Shift earlier to account for removal of first element in periods array
-            [((DTTimePeriod *) obj) shiftEarlierWithSize:DTTimePeriodSizeSecond amount:[periods[0] durationInSeconds]];
+            NSInteger amount = (NSInteger)[self->periods[0] durationInSeconds];
+            [((DTTimePeriod *) obj) shiftEarlierWithSize:DTTimePeriodSizeSecond amount:amount];
         }];
         
         //Remove first period

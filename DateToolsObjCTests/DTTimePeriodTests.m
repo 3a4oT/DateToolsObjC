@@ -12,11 +12,14 @@
 
 
 @interface DTTimePeriodTests : XCTestCase
-@property NSDateFormatter *formatter;
-@property DTTimePeriod *controlTimePeriod;
+@property (nonatomic) NSDateFormatter *formatter;
+@property (nonatomic) DTTimePeriod *controlTimePeriod;
 @end
 
 @implementation DTTimePeriodTests
+
+@synthesize formatter = _formatter;
+@synthesize controlTimePeriod = _controlTimePeriod;
 
 - (void)setUp
 {

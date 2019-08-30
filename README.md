@@ -19,7 +19,7 @@ if ([periodA overlapsWith:periodB]) {
 }
 ```  
 
-## Use with Swift Package Manger
+## Use with Swift Package Manager
 
 ```swift
 

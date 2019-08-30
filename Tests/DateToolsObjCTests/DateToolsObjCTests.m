@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <DateToolsObjC/NSDate+DateTools.h>
+#import "NSDate+DateTools.h"
 
 @interface DateToolsTests : XCTestCase
 @property (nonatomic) NSDateFormatter *formatter;

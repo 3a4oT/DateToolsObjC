@@ -7,8 +7,8 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <DateToolsObjC/DTTimePeriod.h>
-#import <DateToolsObjC/NSDate+DateTools.h>
+#import "DTTimePeriod.h"
+#import "NSDate+DateTools.h"
 
 
 @interface DTTimePeriodTests : XCTestCase

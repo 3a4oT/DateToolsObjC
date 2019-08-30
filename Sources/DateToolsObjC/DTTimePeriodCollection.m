@@ -107,8 +107,8 @@
  *  Sorts the time periods in the collection by earliest start date to latest start date.
  */
 -(void)sortByStartAscending{
-    [periods sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        return [((DTTimePeriod *) obj1).StartDate compare:((DTTimePeriod *) obj2).StartDate];
+    [periods sortUsingComparator:^NSComparisonResult(DTTimePeriod *obj1, DTTimePeriod *obj2) {
+        return [obj1.StartDate compare:obj2.StartDate];
     }];
 }
 
@@ -116,8 +116,8 @@
  *  Sorts the time periods in the collection by latest start date to earliest start date.
  */
 -(void)sortByStartDescending{
-    [periods sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        return [((DTTimePeriod *) obj2).StartDate compare:((DTTimePeriod *) obj1).StartDate];
+    [periods sortUsingComparator:^NSComparisonResult(DTTimePeriod *obj1, DTTimePeriod *obj2) {
+        return [obj2.StartDate compare:obj1.StartDate];
     }];
 }
 
@@ -125,8 +125,8 @@
  *  Sorts the time periods in the collection by earliest end date to latest end date.
  */
 -(void)sortByEndAscending{
-    [periods sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        return [((DTTimePeriod *) obj1).EndDate compare:((DTTimePeriod *) obj2).EndDate];
+    [periods sortUsingComparator:^NSComparisonResult(DTTimePeriod *obj1, DTTimePeriod *obj2) {
+        return [obj1.EndDate compare:obj2.EndDate];
     }];
 }
 
@@ -134,8 +134,8 @@
  *  Sorts the time periods in the collection by latest end date to earliest end date.
  */
 -(void)sortByEndDescending{
-    [periods sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        return [((DTTimePeriod *) obj2).EndDate compare:((DTTimePeriod *) obj1).EndDate];
+    [periods sortUsingComparator:^NSComparisonResult(DTTimePeriod *obj1, DTTimePeriod *obj2) {
+        return [obj2.EndDate compare:obj1.EndDate];
     }];
 }
 
@@ -143,14 +143,17 @@
  *  Sorts the time periods in the collection by how much time they span. Sorts smallest durations to longest.
  */
 -(void)sortByDurationAscending{
-    [periods sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        if (((DTTimePeriod *) obj1).durationInSeconds < ((DTTimePeriod *) obj2).durationInSeconds) {
+    [periods sortUsingComparator:^NSComparisonResult(DTTimePeriod *obj1, DTTimePeriod *obj2) {
+        NSTimeInterval obj1Interval = obj1.durationInSeconds;
+        NSTimeInterval obj2Interval = obj2.durationInSeconds;
+        if (obj1Interval == obj2Interval) {
+            return NSOrderedSame;
+        } else if (obj1Interval < obj2Interval) {
             return NSOrderedAscending;
         }
         else {
             return NSOrderedDescending;
         }
-        return NSOrderedSame;
     }];
 }
 
@@ -158,14 +161,18 @@
  *  Sorts the time periods in the collection by how much time they span. Sorts longest durations to smallest.
  */
 -(void)sortByDurationDescending{
-    [periods sortUsingComparator:^NSComparisonResult(id obj1, id obj2) {
-        if (((DTTimePeriod *) obj1).durationInSeconds > ((DTTimePeriod *) obj2).durationInSeconds) {
+    [periods sortUsingComparator:^NSComparisonResult(DTTimePeriod *obj1, DTTimePeriod *obj2) {
+        NSTimeInterval obj1Interval = obj1.durationInSeconds;
+        NSTimeInterval obj2Interval = obj2.durationInSeconds;
+        if (obj1Interval == obj2Interval) {
+            return NSOrderedSame;
+        }
+        else if (obj1Interval > obj2Interval) {
             return NSOrderedAscending;
         }
         else {
             return NSOrderedDescending;
         }
-        return NSOrderedSame;
     }];
 }
 
@@ -182,8 +189,8 @@
     DTTimePeriodCollection *collection = [[DTTimePeriodCollection alloc] init];
     
     if ([period isKindOfClass:[DTTimePeriod class]]) {
-        [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            if ([((DTTimePeriod *) obj) isInside:period]) {
+        [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
+            if ([obj isInside:period]) {
                 [collection addTimePeriod:obj];
             }
         }];
@@ -207,8 +214,8 @@
     DTTimePeriodCollection *collection = [[DTTimePeriodCollection alloc] init];
     
     if ([date isKindOfClass:[NSDate class]]) {
-        [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            if ([((DTTimePeriod *) obj) containsDate:date interval:DTTimePeriodIntervalClosed]) {
+        [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
+            if ([obj containsDate:date interval:DTTimePeriodIntervalClosed]) {
                 [collection addTimePeriod:obj];
             }
         }];
@@ -232,8 +239,8 @@
     DTTimePeriodCollection *collection = [[DTTimePeriodCollection alloc] init];
     
     if ([period isKindOfClass:[DTTimePeriod class]]) {
-        [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-            if ([((DTTimePeriod *) obj) intersects:period]) {
+        [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
+            if ([obj intersects:period]) {
                 [collection addTimePeriod:obj];
             }
         }];
@@ -256,8 +263,8 @@
 -(DTTimePeriodCollection *)periodsOverlappedByPeriod:(DTTimePeriod *)period{
     DTTimePeriodCollection *collection = [[DTTimePeriodCollection alloc] init];
     
-    [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([((DTTimePeriod *) obj) overlapsWith:period]) {
+    [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
+        if ([obj overlapsWith:period]) {
             [collection addTimePeriod:obj];
         }
     }];
@@ -291,7 +298,7 @@
     __block BOOL isEqual = YES;
     if (considerOrder) {
         
-        [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
             if (![collection[idx] isEqualToPeriod:obj]) {
                 isEqual = NO;
                 *stop = YES;
@@ -301,10 +308,10 @@
     else {
         __block DTTimePeriodCollection *collectionCopy = [collection copy];
         
-        [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
             __block BOOL innerMatch = NO;
-            __block NSInteger matchIndex = 0; //We will remove matches to account for duplicates and to help speed
-            for (int ii = 0; ii < collectionCopy.count; ii++) {
+            __block NSUInteger matchIndex = 0; //We will remove matches to account for duplicates and to help speed
+            for (NSUInteger ii = 0; ii < collectionCopy.count; ii++) {
                 if ([obj isEqualToPeriod:collectionCopy[ii]]) {
                     innerMatch = YES;
                     matchIndex = ii;
@@ -332,12 +339,12 @@
     //Set helper variables
     __block NSDate *startDate = [NSDate distantFuture];
     __block NSDate *endDate = [NSDate distantPast];
-    [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
-        if ([((DTTimePeriod *) obj).StartDate isEarlierThan:startDate]) {
-            startDate = ((DTTimePeriod *) obj).StartDate;
+    [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
+        if ([obj.StartDate isEarlierThan:startDate]) {
+            startDate = obj.StartDate;
         }
-        if ([((DTTimePeriod *) obj).EndDate isLaterThan:endDate]) {
-            endDate = ((DTTimePeriod *) obj).EndDate;
+        if ([obj.EndDate isLaterThan:endDate]) {
+            endDate = obj.EndDate;
         }
     }];
     
@@ -360,7 +367,7 @@
 -(DTTimePeriodCollection *)copy{
     DTTimePeriodCollection *collection = [DTTimePeriodCollection collection];
     
-    [periods enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+    [periods enumerateObjectsUsingBlock:^(DTTimePeriod *obj, NSUInteger idx, BOOL *stop) {
         [collection addTimePeriod:[obj copy]];
     }];
     

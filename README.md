@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/3a4oT/DateToolsObjC.svg?branch=master)](https://travis-ci.org/3a4oT/DateToolsObjC) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
+[![Build Status](https://travis-ci.org/3a4oT/DateToolsObjC.svg?branch=master)](https://travis-ci.org/3a4oT/DateToolsObjC) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager%20-compatible-brightgreen)](https://swift.org/package-manager/)
 
 Thank you, **[Matthew York](https://github.com/MatthewYork) and [community](https://github.com/3a4oT/DateToolsObjC/blob/master/CREDITS.md)** for awesome library. You can find  original [repo/docs here](https://github.com/MatthewYork/DateTools). This package was created because I need *Carthage* support and distinguish between Swift and Objective-C implementation. Swift ABI not stable (yet) and I do not want to spend time to recompile binaries every time new Swift version come. Objective-C API works perfectly fine.
 

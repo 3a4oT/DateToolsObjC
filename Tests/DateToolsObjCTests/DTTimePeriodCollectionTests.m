@@ -7,7 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
-#import <DateToolsObjC/DTTimePeriodCollection.h>
+#import "DTTimePeriodCollection.h"
 
 @interface DTTimePeriodCollectionTests : XCTestCase
 @property (nonatomic) NSDateFormatter *formatter;

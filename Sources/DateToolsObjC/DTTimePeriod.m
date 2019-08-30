@@ -141,25 +141,18 @@
     switch (size) {
         case DTTimePeriodSizeSecond:
             return [date dateByAddingSeconds:amount];
-            break;
         case DTTimePeriodSizeMinute:
             return [date dateByAddingMinutes:amount];
-            break;
         case DTTimePeriodSizeHour:
             return [date dateByAddingHours:amount];
-            break;
         case DTTimePeriodSizeDay:
             return [date dateByAddingDays:amount];
-            break;
         case DTTimePeriodSizeWeek:
             return [date dateByAddingWeeks:amount];
-            break;
         case DTTimePeriodSizeMonth:
             return [date dateByAddingMonths:amount];
-            break;
         case DTTimePeriodSizeYear:
             return [date dateByAddingYears:amount];
-            break;
         default:
             break;
     }
@@ -181,25 +174,18 @@
     switch (size) {
         case DTTimePeriodSizeSecond:
             return [date dateBySubtractingSeconds:amount];
-            break;
         case DTTimePeriodSizeMinute:
             return [date dateBySubtractingMinutes:amount];
-            break;
         case DTTimePeriodSizeHour:
             return [date dateBySubtractingHours:amount];
-            break;
         case DTTimePeriodSizeDay:
             return [date dateBySubtractingDays:amount];
-            break;
         case DTTimePeriodSizeWeek:
             return [date dateBySubtractingWeeks:amount];
-            break;
         case DTTimePeriodSizeMonth:
             return [date dateBySubtractingMonths:amount];
-            break;
         case DTTimePeriodSizeYear:
             return [date dateBySubtractingYears:amount];
-            break;
         default:
             break;
     }

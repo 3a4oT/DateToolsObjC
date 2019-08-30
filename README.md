@@ -19,6 +19,14 @@ if ([periodA overlapsWith:periodB]) {
 }
 ```  
 
+## Use with Swift Package Manger
+
+```swift
+
+.package(url: "https://github.com/3a4oT/DateToolsObjC", .upToNextMajor(from: "1.0.4"))
+
+```
+
 ## [How to use with Carthage](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application):
 
  * Add to your *Cartfile*  ```github "3a4oT/DateToolsObjC"```

@@ -173,7 +173,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -184,7 +184,6 @@
 				OBJ_39 /* CREDITS.md */,
 				OBJ_40 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -300,7 +299,7 @@
 				English,
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -560,6 +559,7 @@
 		OBJ_56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
 				SWIFT_VERSION = 5.0;
@@ -569,6 +569,7 @@
 		OBJ_57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
 				LD = /usr/bin/true;
 				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
 				SWIFT_VERSION = 5.0;

@@ -37,6 +37,14 @@
 
 #pragma mark - Date Components
 
+- (void)testBundleVersion {
+    NSBundle *appBundle = [NSBundle bundleWithIdentifier:@"DateToolsObjC"];
+    XCTAssertNotNil(appBundle);
+    NSString *bundleVersion = [appBundle.infoDictionary valueForKey:@"CFBundleVersion"];
+    NSLog(@"%@", bundleVersion);
+    XCTAssertEqualObjects(bundleVersion, @"1.0.0");
+}
+
 - (void)testEra {
     XCTAssertEqual(1, [[NSDate date] era], @"%s Failed", __PRETTY_FUNCTION__);
 }

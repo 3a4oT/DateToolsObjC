@@ -293,11 +293,11 @@
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "DateToolsObjC" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = OBJ_5;
 			productRefGroup = OBJ_35 /* Products */;
@@ -477,7 +477,7 @@
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
 				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "$(SRCROOT)/Sources/DateToolsObjC/include/module.modulemap";
@@ -538,7 +538,7 @@
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
 				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MODULEMAP_FILE = "$(SRCROOT)/Sources/DateToolsObjC/include/module.modulemap";
@@ -603,7 +603,7 @@
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/DateToolsObjCTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";
@@ -631,7 +631,7 @@
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/Tests/DateToolsObjCTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = "$(inherited)";

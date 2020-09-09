@@ -20,13 +20,27 @@
 // ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 // CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#ifndef DateToolsLocalizedStrings
-#define DateToolsLocalizedStrings(key) \
-NSLocalizedStringFromTableInBundle(key, @"DateTools", [NSBundle bundleWithPath:[[[NSBundle bundleForClass:[DTError class]] resourcePath] stringByAppendingPathComponent:@"DateTools.bundle"]], nil)
+
+#ifdef BUILD_FOR_COCOA_FRAMEWORK
+    #ifndef DateToolsLocalizedStrings
+        #define DateToolsLocalizedStrings(key) \
+            NSLocalizedStringFromTableInBundle(key, @"DateTools", [NSBundle bundleWithPath:[[[NSBundle bundleForClass:[DTError class]] resourcePath] stringByAppendingPathComponent:@"DateTools.bundle"]], nil)
+    #endif
+#else
+    #ifndef DateToolsLocalizedStrings
+        #define DateToolsLocalizedStrings(key) \
+            NSLocalizedStringFromTableInBundle(key, @"DateTools", [NSBundle locBundle], nil)
+    #endif
 #endif
 
 #import <Foundation/Foundation.h>
 #import "DTConstants.h"
+
+#ifndef BUILD_FOR_COCOA_FRAMEWORK
+@interface NSBundle (ObjcModule)
++ (nullable NSBundle*)locBundle;
+@end
+#endif
 
 @interface NSDate (DateTools)
 

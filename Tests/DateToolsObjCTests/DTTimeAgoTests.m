@@ -164,12 +164,21 @@
 {
     NSString *en_local = @"Yesterday";
     NSString *ja_local = @"昨日";
-
+    
     NSString *key = en_local;
-
+    
     NSBundle *mainBundle = [NSBundle bundleForClass:self.class];
+    
+#ifdef BUILD_FOR_COCOA_FRAMEWORK
     NSBundle *dateToolsBundle = [NSBundle bundleWithPath:[mainBundle pathForResource:@"DateTools"
                                                                               ofType:@"bundle"]];
+#else
+    NSBundle* modBundle = [NSBundle bundleWithPath:[mainBundle pathForResource:@"DateToolsObjC_DateToolsObjC"
+                                                                        ofType:@"bundle"]];
+    NSBundle *dateToolsBundle = [NSBundle bundleWithPath:[modBundle pathForResource:@"DateTools"
+                                                                             ofType:@"bundle"]];
+#endif
+    
     NSBundle *jaBundle = [NSBundle bundleWithPath:[dateToolsBundle pathForResource:@"ja"
                                                                             ofType:@"lproj"]];
     

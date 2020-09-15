@@ -3,6 +3,8 @@ on:
   pull_request:
     paths:
       - ".github/workflows/CI.yml"
+      - "Sources/*"
+      - "Tests/*"
 
 jobs:
   SPM-Build:

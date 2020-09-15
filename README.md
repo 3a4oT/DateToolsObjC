@@ -23,7 +23,7 @@ if ([periodA overlapsWith:periodB]) {
 
 ```swift
 
-.package(url: "https://github.com/3a4oT/DateToolsObjC", .upToNextMajor(from: "1.0.4"))
+.package(url: "https://github.com/3a4oT/DateToolsObjC", .upToNextMajor(from: "1.0.5"))
 
 ```
 

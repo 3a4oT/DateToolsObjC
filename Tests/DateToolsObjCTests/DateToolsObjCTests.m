@@ -37,13 +37,18 @@
 
 #pragma mark - Date Components
 
+#ifdef BUILD_FOR_COCOA_FRAMEWORK
 - (void)testBundleVersion {
     NSBundle *appBundle = [NSBundle bundleWithIdentifier:@"DateToolsObjC"];
     XCTAssertNotNil(appBundle);
     NSString *bundleVersion = [appBundle.infoDictionary valueForKey:@"CFBundleVersion"];
-    NSLog(@"%@", bundleVersion);
     XCTAssertEqualObjects(bundleVersion, @"1.0.0");
+    // Bump before release and update test
+    // agvtool new-marketing-version x.x.x
+    NSString *marketingVersion = [appBundle.infoDictionary valueForKey:@"CFBundleShortVersionString"];
+    XCTAssertEqualObjects(marketingVersion, @"1.0.5");
 }
+#endif
 
 - (void)testEra {
     XCTAssertEqual(1, [[NSDate date] era], @"%s Failed", __PRETTY_FUNCTION__);

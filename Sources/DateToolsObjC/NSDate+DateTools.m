@@ -22,6 +22,15 @@
 
 #import "include/NSDate+DateTools.h"
 
+#ifndef BUILD_FOR_COCOA_FRAMEWORK
+@implementation NSBundle (ObjcModule)
++ (nullable NSBundle*)locBundle {
+    return [NSBundle bundleWithURL:[SWIFTPM_MODULE_BUNDLE URLForResource:@"DateTools"
+                                                           withExtension:@"bundle"]];
+}
+@end
+#endif
+
 typedef NS_ENUM(NSUInteger, DTDateComponent){
     DTDateComponentEra,
     DTDateComponentYear,

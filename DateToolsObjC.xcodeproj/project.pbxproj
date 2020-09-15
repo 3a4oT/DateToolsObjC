@@ -9,11 +9,11 @@
 /* Begin PBXAggregateTarget section */
 		"DateToolsObjC::DateToolsObjCPackageTests::ProductTarget" /* DateToolsObjCPackageTests */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_61 /* Build configuration list for PBXAggregateTarget "DateToolsObjCPackageTests" */;
+			buildConfigurationList = OBJ_62 /* Build configuration list for PBXAggregateTarget "DateToolsObjCPackageTests" */;
 			buildPhases = (
 			);
 			dependencies = (
-				OBJ_64 /* PBXTargetDependency */,
+				OBJ_65 /* PBXTargetDependency */,
 			);
 			name = DateToolsObjCPackageTests;
 			productName = DateToolsObjCPackageTests;
@@ -21,42 +21,42 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		0A6F4A5A231961870032E882 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A6F4A582319616E0032E882 /* DateTools.bundle */; };
-		0A6F4A5E231961A50032E882 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A5F231961A50032E882 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A60231961A50032E882 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A61231961A50032E882 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A62231961A50032E882 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A63231961A50032E882 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A64231961A50032E882 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A65231961A50032E882 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A6F4A68231967330032E882 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0A6F4A582319616E0032E882 /* DateTools.bundle */; };
-		OBJ_46 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DTConstants.m */; };
-		OBJ_47 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DTError.m */; };
-		OBJ_48 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DTTimePeriod.m */; };
-		OBJ_49 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DTTimePeriodChain.m */; };
-		OBJ_50 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DTTimePeriodCollection.m */; };
-		OBJ_51 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* DTTimePeriodGroup.m */; };
-		OBJ_52 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* NSDate+DateTools.m */; };
-		OBJ_59 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_70 /* DTTimeAgoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* DTTimeAgoTests.m */; };
-		OBJ_71 /* DTTimePeriodChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* DTTimePeriodChainTests.m */; };
-		OBJ_72 /* DTTimePeriodCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* DTTimePeriodCollectionTests.m */; };
-		OBJ_73 /* DTTimePeriodGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* DTTimePeriodGroupTests.m */; };
-		OBJ_74 /* DTTimePeriodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* DTTimePeriodTests.m */; };
-		OBJ_75 /* DateToolsObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* DateToolsObjCTests.m */; };
-		OBJ_77 /* DateToolsObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DateToolsObjC::DateToolsObjC::Product" /* DateToolsObjC.framework */; };
+		FB4A802C250A1C1600BF0D78 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB4A802A250A1C0400BF0D78 /* DateTools.bundle */; };
+		FB4A802E250A1C2400BF0D78 /* DateTools.bundle in Resources */ = {isa = PBXBuildFile; fileRef = FB4A802A250A1C0400BF0D78 /* DateTools.bundle */; };
+		FB4A8037250A571F00BF0D78 /* DTError.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* DTError.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4A8038250A572100BF0D78 /* DTConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* DTConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4A8039250A572400BF0D78 /* DTTimePeriodChain.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* DTTimePeriodChain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4A803A250A572600BF0D78 /* DTTimePeriodCollection.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DTTimePeriodCollection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4A803B250A572B00BF0D78 /* DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4A803C250A572D00BF0D78 /* DTTimePeriod.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_22 /* DTTimePeriod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4A803D250A572F00BF0D78 /* DTTimePeriodGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DTTimePeriodGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB4A803E250A573100BF0D78 /* NSDate+DateTools.h in Headers */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* NSDate+DateTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		OBJ_47 /* DTConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DTConstants.m */; };
+		OBJ_48 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* DTError.m */; };
+		OBJ_49 /* DTTimePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* DTTimePeriod.m */; };
+		OBJ_50 /* DTTimePeriodChain.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DTTimePeriodChain.m */; };
+		OBJ_51 /* DTTimePeriodCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* DTTimePeriodCollection.m */; };
+		OBJ_52 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* DTTimePeriodGroup.m */; };
+		OBJ_53 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* NSDate+DateTools.m */; };
+		OBJ_60 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_71 /* DTTimeAgoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* DTTimeAgoTests.m */; };
+		OBJ_72 /* DTTimePeriodChainTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* DTTimePeriodChainTests.m */; };
+		OBJ_73 /* DTTimePeriodCollectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* DTTimePeriodCollectionTests.m */; };
+		OBJ_74 /* DTTimePeriodGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* DTTimePeriodGroupTests.m */; };
+		OBJ_75 /* DTTimePeriodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* DTTimePeriodTests.m */; };
+		OBJ_76 /* DateToolsObjCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* DateToolsObjCTests.m */; };
+		OBJ_78 /* DateToolsObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DateToolsObjC::DateToolsObjC::Product" /* DateToolsObjC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A6F4A55231960C40032E882 /* PBXContainerItemProxy */ = {
+		FB4A8027250A1BC900BF0D78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "DateToolsObjC::DateToolsObjC";
 			remoteInfo = DateToolsObjC;
 		};
-		0A6F4A56231960C40032E882 /* PBXContainerItemProxy */ = {
+		FB4A8028250A1BCA00BF0D78 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -66,9 +66,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A6F4A582319616E0032E882 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
 		"DateToolsObjC::DateToolsObjC::Product" /* DateToolsObjC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DateToolsObjC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DateToolsObjC::DateToolsObjCTests::Product" /* DateToolsObjCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = DateToolsObjCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB4A802A250A1C0400BF0D78 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = DateTools.bundle; sourceTree = "<group>"; };
+		FB4A8033250A533400BF0D78 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
 		OBJ_10 /* DTError.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
 		OBJ_11 /* DTTimePeriod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriod.m; sourceTree = "<group>"; };
 		OBJ_12 /* DTTimePeriodChain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChain.m; sourceTree = "<group>"; };
@@ -83,7 +84,6 @@
 		OBJ_22 /* DTTimePeriod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTTimePeriod.h; sourceTree = "<group>"; };
 		OBJ_23 /* DTTimePeriodGroup.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTTimePeriodGroup.h; sourceTree = "<group>"; };
 		OBJ_24 /* NSDate+DateTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
-		OBJ_25 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = /Users/provenskyy/xcodeProjects/DateToolsObjC/Sources/DateToolsObjC/include/module.modulemap; sourceTree = "<group>"; };
 		OBJ_28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		OBJ_29 /* DTTimeAgoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTimeAgoTests.m; sourceTree = "<group>"; };
 		OBJ_30 /* DTTimePeriodChainTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodChainTests.m; sourceTree = "<group>"; };
@@ -91,36 +91,37 @@
 		OBJ_32 /* DTTimePeriodGroupTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodGroupTests.m; sourceTree = "<group>"; };
 		OBJ_33 /* DTTimePeriodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTTimePeriodTests.m; sourceTree = "<group>"; };
 		OBJ_34 /* DateToolsObjCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateToolsObjCTests.m; sourceTree = "<group>"; };
-		OBJ_38 /* LICENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = "<group>"; };
-		OBJ_39 /* CREDITS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CREDITS.md; sourceTree = "<group>"; };
-		OBJ_40 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_38 /* Carthage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Carthage; sourceTree = SOURCE_ROOT; };
+		OBJ_39 /* LICENCE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENCE.md; sourceTree = "<group>"; };
+		OBJ_40 /* CREDITS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CREDITS.md; sourceTree = "<group>"; };
+		OBJ_41 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		OBJ_9 /* DTConstants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTConstants.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_53 /* Frameworks */ = {
+		OBJ_54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_76 /* Frameworks */ = {
+		OBJ_77 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_77 /* DateToolsObjC.framework in Frameworks */,
+				OBJ_78 /* DateToolsObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A6F4A572319616E0032E882 /* Resources */ = {
+		FB4A8029250A1C0400BF0D78 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				0A6F4A582319616E0032E882 /* DateTools.bundle */,
+				FB4A802A250A1C0400BF0D78 /* DateTools.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -128,6 +129,7 @@
 		OBJ_16 /* include */ = {
 			isa = PBXGroup;
 			children = (
+				FB4A8033250A533400BF0D78 /* module.modulemap */,
 				OBJ_17 /* DTError.h */,
 				OBJ_18 /* DTConstants.h */,
 				OBJ_19 /* DTTimePeriodChain.h */,
@@ -136,7 +138,6 @@
 				OBJ_22 /* DTTimePeriod.h */,
 				OBJ_23 /* DTTimePeriodGroup.h */,
 				OBJ_24 /* NSDate+DateTools.h */,
-				OBJ_25 /* module.modulemap */,
 			);
 			path = include;
 			sourceTree = "<group>";
@@ -180,9 +181,10 @@
 				OBJ_7 /* Sources */,
 				OBJ_26 /* Tests */,
 				OBJ_35 /* Products */,
-				OBJ_38 /* LICENCE.md */,
-				OBJ_39 /* CREDITS.md */,
-				OBJ_40 /* README.md */,
+				OBJ_38 /* Carthage */,
+				OBJ_39 /* LICENCE.md */,
+				OBJ_40 /* CREDITS.md */,
+				OBJ_41 /* README.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,7 +199,7 @@
 		OBJ_8 /* DateToolsObjC */ = {
 			isa = PBXGroup;
 			children = (
-				0A6F4A572319616E0032E882 /* Resources */,
+				FB4A8029250A1C0400BF0D78 /* Resources */,
 				OBJ_9 /* DTConstants.m */,
 				OBJ_10 /* DTError.m */,
 				OBJ_11 /* DTTimePeriod.m */,
@@ -214,18 +216,18 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0A6F4A5D231961990032E882 /* Headers */ = {
+		FB4A8036250A571600BF0D78 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6F4A5E231961A50032E882 /* DTError.h in Headers */,
-				0A6F4A5F231961A50032E882 /* DTConstants.h in Headers */,
-				0A6F4A60231961A50032E882 /* DTTimePeriodChain.h in Headers */,
-				0A6F4A61231961A50032E882 /* DTTimePeriodCollection.h in Headers */,
-				0A6F4A62231961A50032E882 /* DateTools.h in Headers */,
-				0A6F4A63231961A50032E882 /* DTTimePeriod.h in Headers */,
-				0A6F4A64231961A50032E882 /* DTTimePeriodGroup.h in Headers */,
-				0A6F4A65231961A50032E882 /* NSDate+DateTools.h in Headers */,
+				FB4A8037250A571F00BF0D78 /* DTError.h in Headers */,
+				FB4A8038250A572100BF0D78 /* DTConstants.h in Headers */,
+				FB4A803A250A572600BF0D78 /* DTTimePeriodCollection.h in Headers */,
+				FB4A803B250A572B00BF0D78 /* DateTools.h in Headers */,
+				FB4A803C250A572D00BF0D78 /* DTTimePeriod.h in Headers */,
+				FB4A803D250A572F00BF0D78 /* DTTimePeriodGroup.h in Headers */,
+				FB4A803E250A573100BF0D78 /* NSDate+DateTools.h in Headers */,
+				FB4A8039250A572400BF0D78 /* DTTimePeriodChain.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,12 +236,12 @@
 /* Begin PBXNativeTarget section */
 		"DateToolsObjC::DateToolsObjC" /* DateToolsObjC */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_42 /* Build configuration list for PBXNativeTarget "DateToolsObjC" */;
+			buildConfigurationList = OBJ_43 /* Build configuration list for PBXNativeTarget "DateToolsObjC" */;
 			buildPhases = (
-				0A6F4A5D231961990032E882 /* Headers */,
-				OBJ_45 /* Sources */,
-				OBJ_53 /* Frameworks */,
-				0A6F4A59231961820032E882 /* Resources */,
+				FB4A8036250A571600BF0D78 /* Headers */,
+				OBJ_46 /* Sources */,
+				OBJ_54 /* Frameworks */,
+				FB4A802B250A1C1000BF0D78 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -252,16 +254,16 @@
 		};
 		"DateToolsObjC::DateToolsObjCTests" /* DateToolsObjCTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_66 /* Build configuration list for PBXNativeTarget "DateToolsObjCTests" */;
+			buildConfigurationList = OBJ_67 /* Build configuration list for PBXNativeTarget "DateToolsObjCTests" */;
 			buildPhases = (
-				OBJ_69 /* Sources */,
-				OBJ_76 /* Frameworks */,
-				0A6F4A5B2319618C0032E882 /* Resources */,
+				OBJ_70 /* Sources */,
+				OBJ_77 /* Frameworks */,
+				FB4A802D250A1C2000BF0D78 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_78 /* PBXTargetDependency */,
+				OBJ_79 /* PBXTargetDependency */,
 			);
 			name = DateToolsObjCTests;
 			productName = DateToolsObjCTests;
@@ -270,9 +272,9 @@
 		};
 		"DateToolsObjC::SwiftPMPackageDescription" /* DateToolsObjCPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_55 /* Build configuration list for PBXNativeTarget "DateToolsObjCPackageDescription" */;
+			buildConfigurationList = OBJ_56 /* Build configuration list for PBXNativeTarget "DateToolsObjCPackageDescription" */;
 			buildPhases = (
-				OBJ_58 /* Sources */,
+				OBJ_59 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -289,15 +291,15 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 1200;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "DateToolsObjC" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
+				Base,
 			);
 			mainGroup = OBJ_5;
 			productRefGroup = OBJ_35 /* Products */;
@@ -313,72 +315,72 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A6F4A59231961820032E882 /* Resources */ = {
+		FB4A802B250A1C1000BF0D78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6F4A5A231961870032E882 /* DateTools.bundle in Resources */,
+				FB4A802C250A1C1600BF0D78 /* DateTools.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6F4A5B2319618C0032E882 /* Resources */ = {
+		FB4A802D250A1C2000BF0D78 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6F4A68231967330032E882 /* DateTools.bundle in Resources */,
+				FB4A802E250A1C2400BF0D78 /* DateTools.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_45 /* Sources */ = {
+		OBJ_46 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_46 /* DTConstants.m in Sources */,
-				OBJ_47 /* DTError.m in Sources */,
-				OBJ_48 /* DTTimePeriod.m in Sources */,
-				OBJ_49 /* DTTimePeriodChain.m in Sources */,
-				OBJ_50 /* DTTimePeriodCollection.m in Sources */,
-				OBJ_51 /* DTTimePeriodGroup.m in Sources */,
-				OBJ_52 /* NSDate+DateTools.m in Sources */,
+				OBJ_47 /* DTConstants.m in Sources */,
+				OBJ_48 /* DTError.m in Sources */,
+				OBJ_49 /* DTTimePeriod.m in Sources */,
+				OBJ_50 /* DTTimePeriodChain.m in Sources */,
+				OBJ_51 /* DTTimePeriodCollection.m in Sources */,
+				OBJ_52 /* DTTimePeriodGroup.m in Sources */,
+				OBJ_53 /* NSDate+DateTools.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_58 /* Sources */ = {
+		OBJ_59 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_59 /* Package.swift in Sources */,
+				OBJ_60 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_69 /* Sources */ = {
+		OBJ_70 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_70 /* DTTimeAgoTests.m in Sources */,
-				OBJ_71 /* DTTimePeriodChainTests.m in Sources */,
-				OBJ_72 /* DTTimePeriodCollectionTests.m in Sources */,
-				OBJ_73 /* DTTimePeriodGroupTests.m in Sources */,
-				OBJ_74 /* DTTimePeriodTests.m in Sources */,
-				OBJ_75 /* DateToolsObjCTests.m in Sources */,
+				OBJ_71 /* DTTimeAgoTests.m in Sources */,
+				OBJ_72 /* DTTimePeriodChainTests.m in Sources */,
+				OBJ_73 /* DTTimePeriodCollectionTests.m in Sources */,
+				OBJ_74 /* DTTimePeriodGroupTests.m in Sources */,
+				OBJ_75 /* DTTimePeriodTests.m in Sources */,
+				OBJ_76 /* DateToolsObjCTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_64 /* PBXTargetDependency */ = {
+		OBJ_65 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DateToolsObjC::DateToolsObjCTests" /* DateToolsObjCTests */;
-			targetProxy = 0A6F4A56231960C40032E882 /* PBXContainerItemProxy */;
+			targetProxy = FB4A8028250A1BCA00BF0D78 /* PBXContainerItemProxy */;
 		};
-		OBJ_78 /* PBXTargetDependency */ = {
+		OBJ_79 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DateToolsObjC::DateToolsObjC" /* DateToolsObjC */;
-			targetProxy = 0A6F4A55231960C40032E882 /* PBXContainerItemProxy */;
+			targetProxy = FB4A8027250A1BC900BF0D78 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -387,20 +389,48 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
+					"BUILD_FOR_COCOA_FRAMEWORK=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
-				OTHER_SWIFT_FLAGS = "-DXcode";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
@@ -414,17 +444,44 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
+					"BUILD_FOR_COCOA_FRAMEWORK=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
-				OTHER_SWIFT_FLAGS = "-DXcode";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SUPPORTED_PLATFORMS = "macosx iphoneos iphonesimulator appletvos appletvsimulator watchos watchsimulator";
@@ -434,52 +491,23 @@
 			};
 			name = Release;
 		};
-		OBJ_43 /* Debug */ = {
+		OBJ_44 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES_ERROR;
-				CLANG_WARN_COMMA = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES_ERROR;
-				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
 				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "$(SRCROOT)/Sources/DateToolsObjC/include/module.modulemap";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -490,57 +518,28 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = DateToolsObjC;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
-		OBJ_44 /* Release */ = {
+		OBJ_45 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				APPLICATION_EXTENSION_API_ONLY = YES;
-				CLANG_WARN_ASSIGN_ENUM = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES_ERROR;
-				CLANG_WARN_COMMA = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES_ERROR;
-				CLANG_WARN_SEMICOLON_BEFORE_METHOD_BODY = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES_AGGRESSIVE;
 				DEFINES_MODULE = YES;
 				ENABLE_TESTABILITY = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
-				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
-				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
-				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
-				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
-				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
-				GCC_WARN_SHADOW = YES;
-				GCC_WARN_SIGN_COMPARE = NO;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNKNOWN_PRAGMAS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_LABEL = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
 				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MODULEMAP_FILE = "$(SRCROOT)/Sources/DateToolsObjC/include/module.modulemap";
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
@@ -551,48 +550,46 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = DateToolsObjC;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
-		OBJ_56 /* Debug */ = {
+		OBJ_57 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.3.0";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		OBJ_57 /* Release */ = {
+		OBJ_58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjC_Info.plist;
 				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
+				OTHER_SWIFT_FLAGS = "-swift-version 5 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -sdk /Applications/Xcode-beta.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX11.0.sdk -package-description-version 5.3.0";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		OBJ_62 /* Debug */ = {
+		OBJ_63 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Debug;
 		};
-		OBJ_63 /* Release */ = {
+		OBJ_64 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Release;
 		};
-		OBJ_67 /* Debug */ = {
+		OBJ_68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -602,25 +599,25 @@
 					"$(SRCROOT)/Tests/DateToolsObjCTests/include",
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/DateToolsObjCTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjCTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = DateToolsObjCTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Debug;
 		};
-		OBJ_68 /* Release */ = {
+		OBJ_69 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -630,17 +627,17 @@
 					"$(SRCROOT)/Tests/DateToolsObjCTests/include",
 					"$(SRCROOT)/Sources/DateToolsObjC/include",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/Tests/DateToolsObjCTests/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				INFOPLIST_FILE = DateToolsObjC.xcodeproj/DateToolsObjCTests_Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				OTHER_CFLAGS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
 				TARGET_NAME = DateToolsObjCTests;
-				TVOS_DEPLOYMENT_TARGET = 9.0;
-				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+				TVOS_DEPLOYMENT_TARGET = 12.0;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
 			};
 			name = Release;
 		};
@@ -656,38 +653,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_42 /* Build configuration list for PBXNativeTarget "DateToolsObjC" */ = {
+		OBJ_43 /* Build configuration list for PBXNativeTarget "DateToolsObjC" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_43 /* Debug */,
-				OBJ_44 /* Release */,
+				OBJ_44 /* Debug */,
+				OBJ_45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_55 /* Build configuration list for PBXNativeTarget "DateToolsObjCPackageDescription" */ = {
+		OBJ_56 /* Build configuration list for PBXNativeTarget "DateToolsObjCPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_56 /* Debug */,
-				OBJ_57 /* Release */,
+				OBJ_57 /* Debug */,
+				OBJ_58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_61 /* Build configuration list for PBXAggregateTarget "DateToolsObjCPackageTests" */ = {
+		OBJ_62 /* Build configuration list for PBXAggregateTarget "DateToolsObjCPackageTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_62 /* Debug */,
-				OBJ_63 /* Release */,
+				OBJ_63 /* Debug */,
+				OBJ_64 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_66 /* Build configuration list for PBXNativeTarget "DateToolsObjCTests" */ = {
+		OBJ_67 /* Build configuration list for PBXNativeTarget "DateToolsObjCTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_67 /* Debug */,
-				OBJ_68 /* Release */,
+				OBJ_68 /* Debug */,
+				OBJ_69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
